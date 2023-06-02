@@ -2,20 +2,5 @@
     {
         "title": "Test Title",
         "text": "Test text"
-    },
-    {
-        "title": "apple",
-        "text": "banana",
-        "id": "03f6be04-c402-4058-bcf2-5423a4b23acd"
-    },
-    {
-        "title": "buy shoes",
-        "text": "buy shoes",
-        "id": "b1344e9f-3287-4291-b91f-f9e1b2639f25"
-    },
-    {
-        "title": "banana",
-        "text": "buy banana",
-        "id": "75c85c85-e03f-4b1c-b021-fd2dabfa3661"
     }
 ]
