@@ -11,6 +11,7 @@ router.get('/notes', (req, res) => {
     readFromFile('./db/db.json').then((data) => {return res.json(JSON.parse(data))});
   });
 
+  // PUT Route to call on the notes and have them appear on the right side column
 router.put('/notes/:id', (req, res) => {
   const noteId = req.params.id;
   readFromFile('./db/db.json')
@@ -23,6 +24,7 @@ router.put('/notes/:id', (req, res) => {
     });
   });
 
+  // POST Route to save notes into the ds.json
 router.post('/notes', (req, res) => {
     console.log(req.body);
 
