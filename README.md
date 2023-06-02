@@ -4,7 +4,7 @@
 
 This project is a logo maker. When the user opens this project on a command-line application, they will be asked a series of questions. The questions include mostly input based questions and one list type question. The user's input will then be taken and used to create a logo with the same text, text color, shape, and shape color that the user selected. This project contains notes on index.js and all the files within the lib folder.
 
-Here is the link to the github for this project: https://github.com/jssoyoung/Logo_maker
+Here is the link to the github for this project: https://github.com/jssoyoung/Note-Taker
 
 Here is the link to my walkthrough video of the project: https://drive.google.com/file/d/1FA2pWq2usSJgipZyIHMgxaw42CPwI47_/view
 

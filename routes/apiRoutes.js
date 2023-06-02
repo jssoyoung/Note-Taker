@@ -8,37 +8,20 @@ const {
 
 // GET Route for retrieving all the notes
 router.get('/notes', (req, res) => {
-    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
+    readFromFile('./db/db.json').then((data) => {return res.json(JSON.parse(data))});
   });
 
 router.put('/notes/:id', (req, res) => {
-  const noteId = req.params.note_id;
+  const noteId = req.params.id;
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-      const result = json.filter((note) => note.note_id === noteId); 
+      const result = json.filter((data) => data.id === noteId); 
       return result.length > 0
       ? res.json(result)
       : res.json('No note with that ID');
     });
   });
-
-// // DELETE Route for a specific tip
-// router.delete('notes/:id', (req, res) => {
-//   const noteId = req.params.id;
-//   readFromFile('./db/db.json')
-//     .then((data) => JSON.parse(data))
-//     .then((json) => {
-//       // Make a new array of all notes except the one with the ID provided in the URL
-//       const result = json.filter((note) => note.id !== noteId);
-
-//       // Save that array to the filesystem
-//       writeToFile('./db/db.json', result);
-
-//       // Respond to the DELETE request
-//       res.json(`Item ${noteId} has been deleted 🗑️`);
-//     });
-// });
 
 router.post('/notes', (req, res) => {
     console.log(req.body);
@@ -49,7 +32,7 @@ router.post('/notes', (req, res) => {
       const newNote = {
         title,
         text,
-        note_id: uuidv4(),
+        id: uuidv4(),
       };
   
       readAndAppend(newNote, './db/db.json');
@@ -57,6 +40,23 @@ router.post('/notes', (req, res) => {
     } else {
       res.error('Error in adding note');
     }
+});
+
+// DELETE Route for a specific tip
+router.delete('notes/:id', (req, res) => {
+  const noteId = req.params.id;
+  readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      // Make a new array of all notes except the one with the ID provided in the URL
+      const result = json.filter((db) => id !== noteId);
+
+      // Save that array to the filesystem
+      writeToFile('./db/db.json', result);
+
+      // Respond to the DELETE request
+      res.json(`Item ${noteId} has been deleted 🗑️`);
+    });
 });
 
 module.exports = router;
