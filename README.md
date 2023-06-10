@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is created to store all the user's notes. The user could click the get started button in order to create a note. The user will be asked to create a title for the note and add in text for the note. Once a note is written with the text and title, a save button appears on the top right corner. If clicked, the note will be stored and added to the left side column. The user could click on the notes on the left column for their full note to show up. If the plus sign on the right top corner is clicked, it will go back to creating a new note. This project contains notes on apiRoutes.js and index.js.
+This project is created to store all the user's notes. The user could click the get started button in order to create a note. The user will be asked to create a title for the note and add in text for the note. Once a note is written with the text and title, a save button appears on the top right corner. If clicked, the note will be stored and added to the left side column. The user could click on the notes on the left column for their full note to show up. If the plus sign on the right top corner is clicked, it will go back to creating a new note. This project contains notes on server.js, htmlRoutes.js, apiRoutes.js and index.js.
 
 Here is the link to the github for this project: https://github.com/jssoyoung/Note-Taker
 
