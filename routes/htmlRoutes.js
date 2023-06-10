@@ -7,7 +7,7 @@ router.get('/notes', (req, res) =>
 );
 
 // Code that if anything else is typed after /, index.html will show
-router.get('*', (req, res) =>
+router.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '../public/index.html'))
 );
 
