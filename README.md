@@ -6,6 +6,8 @@ This project is created to store all the user's notes. The user could click the 
 
 Here is the link to the github for this project: https://github.com/jssoyoung/Note-Taker
 
+Here is the link to the deployed : https://morning-reef-32833.herokuapp.com/
+
 Here is a screenshot of this project: ![Portfolio](/public/Assets/Images/screenshot.png)
 
 ## Installation
